@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "kaggle": {
+      "command": "uvx",
+      "args": [
+        "--with",
+        "mcp<2",
+        "--from",
+        "kaggle-mcp-server==0.2.0",
+        "kaggle-mcp-server"
+      ]
+    }
+  }
+}
