@@ -12,7 +12,9 @@ jobs:
       - uses: astral-sh/setup-uv@v6
       - name: Validate manifests and scan for secrets
         run: python3 scripts/validate.py
-      - name: Smoke test upstream MCP
+      - name: Smoke test upstream stdio MCP
         run: bash scripts/smoke-test.sh
-      - name: Build Docker image
-        run: docker build -t kaggle-mcp-chatgpt:ci .
+      - name: Build stdio Docker image
+        run: docker build -t kaggle-mcp-chatgpt:stdio .
+      - name: Build and smoke test ChatGPT HTTP image
+        run: bash scripts/smoke-http.sh
