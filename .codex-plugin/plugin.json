@@ -1,0 +1,12 @@
+{
+  "name": "kaggle-mcp-chatgpt",
+  "version": "1.0.0",
+  "description": "ChatGPT/Codex wrapper for Galaxy-Dawn/kaggle-mcp.",
+  "mcpServers": "../.mcp.json",
+  "skills": "../skills/",
+  "interface": {
+    "displayName": "Kaggle MCP",
+    "shortDescription": "Kaggle competitions, datasets, notebooks, models, benchmarks and discussions.",
+    "developerName": "vitorcalvi wrapper / Galaxy-Dawn upstream"
+  }
+}
