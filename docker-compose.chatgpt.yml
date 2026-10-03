@@ -1,0 +1,11 @@
+services:
+  kaggle-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile.chatgpt
+    environment:
+      KAGGLE_API_TOKEN: ${KAGGLE_API_TOKEN:?Set KAGGLE_API_TOKEN in your shell or .env}
+      PORT: 8080
+    ports:
+      - "127.0.0.1:8080:8080"
+    restart: unless-stopped
