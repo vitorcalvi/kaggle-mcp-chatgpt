@@ -44,10 +44,10 @@ Never commit the real token.
 
 This keeps the Kaggle MCP private and avoids publishing a token-backed endpoint to the internet.
 
-Run the local stdio server through OpenAI Secure MCP Tunnel. Point the tunnel at:
+Run the local stdio server through OpenAI Secure MCP Tunnel. Point the tunnel at this command:
 
 ```bash
-/path/to/kaggle-mcp-chatgpt/scripts/run-stdio.sh
+bash /path/to/kaggle-mcp-chatgpt/scripts/run-stdio.sh
 ```
 
 The `tunnel-client` process must inherit `KAGGLE_API_TOKEN`.
@@ -113,7 +113,7 @@ If Node.js, `uv`, and `npx` are installed:
 
 ```bash
 export KAGGLE_API_TOKEN='KGAT_...'
-PORT=8080 ./scripts/run-chatgpt-http.sh
+PORT=8080 bash ./scripts/run-chatgpt-http.sh
 ```
 
 This local script binds to `127.0.0.1` and exposes `/mcp`.
